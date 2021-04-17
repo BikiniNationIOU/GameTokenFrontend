@@ -12,6 +12,15 @@ const tokens = {
     decimals: 18,
     projectLink: 'https://gametoken.finance/',
   },
+  mdo: {
+    symbol: 'MDO',
+    address: {
+      56: '0x56CFF0753F898414099CC7E9bA337914AA7215d7',
+      97: '',
+    },
+    decimals: 18,
+    projectLink: 'https://https://midasdollar.fi/',
+  },
   cake: {
     symbol: 'CAKE',
     address: {

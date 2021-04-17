@@ -202,6 +202,19 @@ const farms: FarmConfig[] = [
     
     isTokenOnly: true,
    },
+
+   {
+    pid: 16,
+    lpSymbol: 'MDO',
+     lpAddresses: {
+       97: '',
+       56: '0x35e869B7456462b81cdB5e6e42434bD27f3F788c',
+    },
+    token: tokens.mdo,
+    quoteToken: tokens.busd,
+    
+    isTokenOnly: true,
+   },
    
   
 
