@@ -15,7 +15,7 @@ const tokens = {
   mdo: {
     symbol: 'MDO',
     address: {
-      56: '0x56CFF0753F898414099CC7E9bA337914AA7215d7',
+      56: '0x35e869B7456462b81cdB5e6e42434bD27f3F788c',
       97: '',
     },
     decimals: 18,
