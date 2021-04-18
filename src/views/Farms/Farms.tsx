@@ -15,6 +15,7 @@ import useI18n from 'hooks/useI18n'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { getFarmApy } from 'utils/apy'
 import { orderBy } from 'lodash'
+import tokens from 'config/constants/tokens'
 
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import Table from './components/FarmTable/FarmTable'
@@ -25,6 +26,7 @@ import ToggleView from './components/ToggleView/ToggleView'
 import Divider from './components/Divider'
 import { DesktopColumnSchema, ViewMode } from './components/types'
 import Select, { OptionProps } from './components/Select/Select'
+
 
 const ControlContainer = styled.div`
   display: flex;
@@ -176,7 +178,8 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           return farm
         }
 
-        const quoteTokenPriceUsd = prices[farm.quoteToken.symbol.toLowerCase()]
+        let quoteTokenPriceUsd = prices[farm.quoteToken.symbol.toLowerCase()]
+        if(farm.quoteToken.symbol === tokens.gme.symbol) quoteTokenPriceUsd = cakePrice.toNumber();
         const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(quoteTokenPriceUsd)
         const apy = isActive ? getFarmApy(farm.poolWeight, cakePrice, totalLiquidity) : 0
 
