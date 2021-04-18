@@ -204,14 +204,14 @@ export const useGetApiPrice = (token: string) => {
 }
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 1 // GME-BNB LP
+  const pid = 2 // GME-BNB LP
   const gmePriceUSD = usePriceCakeBusd();
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? gmePriceUSD.div(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const pid = 4 // BUSD-GME LP
+  const pid = 1 // BUSD-GME LP
   // const cakeBnbFarm = useFarmFromPid(1)
   // const bnbBusdFarm = useFarmFromPid(2)
 

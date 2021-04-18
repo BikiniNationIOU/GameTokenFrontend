@@ -21,8 +21,8 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x56CFF0753F898414099CC7E9bA337914AA7215d7',
     },
-    token: tokens.gme,
-    quoteToken: tokens.busd,
+    token: tokens.busd,
+    quoteToken: tokens.gme,
     
   },
 
