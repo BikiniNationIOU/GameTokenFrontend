@@ -47,7 +47,7 @@ const farms: FarmConfig[] = [
       56: '0x2E4B12bb5B2d3a7ec35a47515621E98714953F71',
     },
     token: tokens.gme,
-    quoteToken: tokens.wbnb,
+    quoteToken: tokens.cake,
     
   },
 
@@ -59,7 +59,7 @@ const farms: FarmConfig[] = [
       56: '0x61C85Fbb8c5C64f7875bbD8Cde1609BF5a06B99F',
     },
     token: tokens.gme,
-    quoteToken: tokens.wbnb,
+    quoteToken: tokens.ada,
     
   },
 
@@ -71,7 +71,7 @@ const farms: FarmConfig[] = [
       56: '0x31ecC76e40D171bE3E85f8B3c271248F70052fB6',
     },
     token: tokens.gme,
-    quoteToken: tokens.wbnb,
+    quoteToken: tokens.dot,
     
   },
 
