@@ -45,6 +45,7 @@ export const useTotalSupply = () => {
 
 export const useGmePerBlock = () => {
  const [reward, setReward] = useState<BigNumber>()
+ const { slowRefresh } = useRefresh()
 
   useEffect(() => {
     async function fetchGmePerBlock() {
@@ -54,7 +55,7 @@ export const useGmePerBlock = () => {
     }
 
     fetchGmePerBlock()
-  })
+  }, [slowRefresh])
 
   return reward
 }
